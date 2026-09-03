@@ -117,7 +117,6 @@ _Vectors (cases 3 & 4)_
 - Embedding model: **Amazon Titan Text Embeddings V2**
 - Dimensions: **1024** · Precision: **float32 (4 B/number)** → **4 KB/vector**
 - Granularity: **one vector per message** → ~**104M vectors** → **~430 GB**
-- Tokens: ~20/message @ **$0.02 / 1M tokens** (backfill ~$40 one-time, ongoing <$1/mo)
 - Embedded content: **all text messages** (incl. promo SMS)
 
 _Environment_
