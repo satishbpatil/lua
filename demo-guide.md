@@ -3,9 +3,7 @@
 
 ## The Problem
 
-- Chat transcripts land in S3 from Amazon Connect; **business metadata (customer,
-  property, topic) lives in a separate CTR stream** — the two must be joined on
-  `ContactId`.
+- Chat transcripts land in S3 from Amazon Connect;
 - Today's tool queries via **Athena** — flexible but **slow** (~seconds) and
   **keyword-only** (no "find conversations _about_ X").
 - Goal: fast retrieval for agents + **semantic search** for analysts.
