@@ -1,10 +1,5 @@
-# Chat History Retrieval — Demo Runbook
+# Chat History Retrieval — Demo
 
-Four ways to retrieve/search Caesars chat history, benchmarked on the **same data**
-and **same queries**. Open the Streamlit app (`benchmark-ui`, `streamlit run app.py`)
-— one tab per case. Every tab shows **Round-trip** latency.
-
----
 
 ## 0. The Problem
 
@@ -15,8 +10,6 @@ and **same queries**. Open the Streamlit app (`benchmark-ui`, `streamlit run app
   **keyword-only** (no "find conversations _about_ X").
 - Goal: fast retrieval for agents + **semantic search** for analysts.
 
-**One data set feeds all four stores** (via S3 → EventBridge → 3 Lambdas + Athena
-reads S3 directly), so comparisons are apples-to-apples.
 
 ---
 
