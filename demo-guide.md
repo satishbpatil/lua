@@ -4,8 +4,7 @@
 ## The Problem
 
 - Chat transcripts land in S3 from Amazon Connect;
-- Today's tool queries via **Athena** — flexible but **slow** (~seconds) and
-  **keyword-only** (no "find conversations _about_ X").
+- Today's tool queries via **Athena** —   **keyword-only** .
 - Goal: fast retrieval for agents + **semantic search** for analysts.
 
 
