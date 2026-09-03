@@ -5,7 +5,7 @@
 
 - Chat transcripts land in S3 from Amazon Connect;
 - Today's tool queries via **Athena** —   **keyword-only** .
-- Goal: fast retrieval for agents + **semantic search** for analysts.
+- Goal:  **semantic search** for analysts.
 
 
 ---
