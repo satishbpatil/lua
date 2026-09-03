@@ -142,8 +142,7 @@ _Environment_
 | Reads (query volume)   | $0.25 / M RRU | **~$1–5**    |
 | **Total**              |               | **~$15–20**  |
 
-_Storage cost grows steadily with the 5-year retention; reads/writes cheap at this
-volume. Add a GSI only if you need non-key access (extra storage + writes)._
+
 
 ### Case 3 — OpenSearch Serverless
 
@@ -155,7 +154,7 @@ volume. Add a GSI only if you need non-key access (extra storage + writes)._
 | Bedrock Titan — ongoing embeds      | $0.02 / M tokens | **<$1**                                        |
 | **Total**                           |                  | **~$350–700 (dominated by always-on OCUs)**    |
 
-_Highest floor: you pay for OCUs 24/7 even when idle. Fastest search, though._
+
 
 ### Case 3b — OpenSearch (reuse existing cluster)
 
@@ -168,9 +167,7 @@ Assumes the customer's current cluster has (or adds) enough RAM/storage.
 | Bedrock Titan — ongoing embeds | $0.02 / M tokens | **<$1** |
 | **Total incremental** | | **~$40 one-time, then <$10/month** |
 
-_Strongest cost case: no new compute floor — only ~$40 one-time to embed 5 years of
-history + pennies/month ongoing. If more capacity is needed, cost is just the added
-nodes (kept small via per-conversation embedding or 512-dim vectors)._
+
 
 ### Case 4 — S3 Vectors
 
@@ -182,7 +179,4 @@ nodes (kept small via per-conversation embedding or 512-dim vectors)._
 | Bedrock Titan — ongoing embeds      | $0.02 / M tokens               | **<$1**                        |
 | **Total**                           |                                | **~$30–50** (no compute floor) |
 
-_Semantic search at ~1/10th of OpenSearch's cost; trade latency for price. Best for
-the large, mostly-cold 5-year vector set._
 
-_Populate real latency from the app's Round-trip during the demo._
