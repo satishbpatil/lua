@@ -1,7 +1,7 @@
 # Chat History Retrieval — Demo
 
 
-## 0. The Problem
+## The Problem
 
 - Chat transcripts land in S3 from Amazon Connect; **business metadata (customer,
   property, topic) lives in a separate CTR stream** — the two must be joined on
